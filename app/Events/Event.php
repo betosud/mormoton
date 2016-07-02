@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Events;
+namespace mormoton\Events;
 
 abstract class Event
 {

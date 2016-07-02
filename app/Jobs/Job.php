@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Jobs;
+namespace mormoton\Jobs;
 
 use Illuminate\Bus\Queueable;
 

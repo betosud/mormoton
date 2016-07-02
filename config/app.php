@@ -153,10 +153,10 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        mormoton\Providers\AppServiceProvider::class,
+        mormoton\Providers\AuthServiceProvider::class,
+        mormoton\Providers\EventServiceProvider::class,
+        mormoton\Providers\RouteServiceProvider::class,
 
     ],
 
