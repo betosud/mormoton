@@ -19,5 +19,9 @@ Route::auth();
 
 
 
+//administracion de preguntas
+Route::get('questions',['uses'=>'QuestionsController@Index','as'=>'questions','middleware'=>'auth','middleware' => 'permission:view.question']);
+Route::post('storequestions',['uses'=>'QuestionsController@store','as'=>'storequestions','middleware'=>'auth','middleware' => 'permission:add.question']);
+
 
 Route::get('/home', 'HomeController@index');
