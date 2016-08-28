@@ -1,4 +1,4 @@
-<div class="modal fade newmodal" id="newmodal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" aria-labelledby="newmodallabel">
+<div class="modal fade" id="newmodal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" aria-labelledby="newmodallabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -15,10 +15,10 @@
 
                         <div class="col-md-8">
                             {{--<input id="book" type="text" class="form-control" name="book" value="{{ old('book') }}">--}}
-                            {!!  Form::select('book', $combos['books'],null,['id'=>'book', 'placeholder'=>'Selecciona Libro','class'=>'form-control','value'=>old('book')]) !!}
-                            @if ($errors->has('book'))
+                            {!!  Form::select('idbook', $combos['books'],null,['id'=>'idbook', 'placeholder'=>'Selecciona Libro','class'=>'form-control','value'=>old('idbook')]) !!}
+                            @if ($errors->has('idbook'))
                                 <span class="help-block">
-                                        <strong>{{ $errors->first('book') }}</strong>
+                                        <strong>{{ $errors->first('idbook') }}</strong>
                                     </span>
                             @endif
                         </div>
@@ -39,27 +39,26 @@
                     </div>
 
 
-                    <div class="form-group{{ $errors->has('respuesta') ? ' has-error' : '' }}">
-                        <label for="respuesta" class="col-md-4 control-label">Escriba la Respuesta</label>
+                    <div class="form-group{{ $errors->has('answer') ? ' has-error' : '' }}">
+                        <label for="answer" class="col-md-4 control-label">Escriba la Respuesta</label>
 
                         <div class="col-md-8">
-                            <input id="respuesta" type="text" class="form-control" name="respuesta" value="{{ old('respuesta') }}">
+                            <input id="answer" type="text" class="form-control" name="answer" value="{{ old('answer') }}">
                             {{--                            {!!  Form::select('question', $combos['question'],null,['id'=>'question', 'placeholder'=>'Selecciona Libro','class'=>'form-control','value'=>old('book')]) !!}--}}
-                            @if ($errors->has('respuesta'))
+                            @if ($errors->has('answer'))
                                 <span class="help-block">
-                                        <strong>{{ $errors->first('respuesta') }}</strong>
+                                        <strong>{{ $errors->first('answer') }}</strong>
                                     </span>
                             @endif
                         </div>
                     </div>
 
-
+                </form>
             </div>
             <div class="modal-footer">
                 <a type="button" class="btn btn-default" data-dismiss="modal">Cerrar</a>
-                <button href="#" id="guardarpregunta" type="submit" class="btn btn-primary">Guardar</button>
+                <a href="#" id="guardarpregunta" type="button" class="btn btn-primary">Guardar</a>
             </div>
         </div>
-        </form>
     </div>
 </div>

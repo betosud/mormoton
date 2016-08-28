@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'soporte@estacaamecameca.org', 'name' => 'Soporte'],
+    'from' => ['address' => 'mormoton@estacaamecameca.org', 'name' => 'Soporte Mormoton'],
 
     /*
     |--------------------------------------------------------------------------

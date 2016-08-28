@@ -10,9 +10,9 @@
             <div class="panel-heading">Preguntas Mormoton</div>
                 <div class="panel-body">
                     <div class="btn-group" role="group" aria-label="...">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newmodal">Agregar Pregunta</button>
+                        <button type="button" class="btn btn-primary" onclick="newmodal()">Agregar Pregunta</button>
                     </div>
-                    <div class="questions">
+                    <div id="questions" class="questions">
 
                     </div>
                 </div>
@@ -21,60 +21,68 @@
 
 
     @include('questions.newquestion')
-
-
-
-
-
-
-@if ($errors->has('book') || $errors->has('question') || $errors->has('respuesta'))
-    
-        <script>
-
-            $('#newmodal').modal({
-                show: 'true'
-            });
-        </script>
-
-@endif
 @endsection
 
 
 
 @section('scripts')
-{{--<script>--}}
-    {{--$(document).ready(function() {--}}
-        {{--$("#guardarpregunta").click(function () {--}}
-            {{--var form=$('#form-add-question')--}}
-            {{--var url=form.attr('action');--}}
-            {{--var data=form.serialize();--}}
+<script>
+    function newmodal() {
+        $('#question').val('');
+        $('#answer').val('');
+        $('#idbook').val(null);
+        $('#newmodal').modal('show');
+    }
+    var listarquestion = function () {
 
-            {{--$.ajax({--}}
-                {{--url:url,--}}
-{{--//                headers:{'X-CSRF-TOKEN':token},--}}
-                {{--type:'POST',--}}
-{{--//                datatype:'json',--}}
-                {{--data:data,--}}
-                {{--success:function(salida){--}}
+        var url = 'listarquestion';
+        $.ajax({
+            type: 'get',
+            url: url,
+            success: function (data) {
+                $('#questions').empty().html(data);
+            }
+        });
+    };
+
+    $("#guardarpregunta").click(function () {
+        var form=$('#form-add-question')
+        var url=form.attr('action');
+        var data=form.serialize();
+
+        $.ajax({
+            url:url,
+
+            type:'POST',
+
+            data:data,
+            success:function(salida){
 
 
-{{--//                    toastr.success('El correo Fue enviado',{timeOut: 1500});--}}
-{{--//                    $('#loading').modal('hide');--}}
-{{--//                    $('#enviar').modal('hide');--}}
-                {{--},--}}
-                {{--error:function(msj){--}}
-{{--//                    $('#loading').modal('hide')--}}
-{{--//                     toastr.warning('Error al enviar el mensaje compruebe su conexion',{timeOut: 4000});--}}
-                    {{--var result =msj.responseJSON;--}}
-                    {{--$.each(result, function(i, item) {--}}
-                        {{--Materialize.toast(item,3000,'rounded');--}}
-                    {{--});--}}
+                toastr.success('La pregunta se Guardo Correctamente',{timeOut: 1500});
+                $('#question').val('');
+                $('#answer').val('');
+                $('#idbook').val(null);
+                $('#newmodal').modal('hide');
+                listarquestion();
+
+            },
+            error:function(msj){
+//                    $('#loading').modal('hide')
+//                     toastr.warning('Error al enviar el mensaje compruebe su conexion',{timeOut: 4000});
+                var result =msj.responseJSON;
+                $.each(result, function(i, item) {
+//                        Materialize.toast(item,3000,'rounded');
+                    toastr.error(item,{timeOut: 4000});
+                });
 
 
-                {{--}--}}
-            {{--});--}}
-        {{--})--}}
-    {{--});--}}
-{{--</script>--}}
+            }
+        });
+    })
+    $(document).ready(function() {
+        listarquestion();
+    });
+</script>
 
 @endsection
