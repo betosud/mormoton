@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Books extends Migration
+class Libros extends Migration
 {
     /**
      * Run the migrations.
@@ -12,10 +12,13 @@ class Books extends Migration
      */
     public function up()
     {
-        Schema::create('books', function (Blueprint $table) {
+        Schema::create('libros', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('idbook')->unsigned();
+            $table->foreign('idbook')->references('id')->on('books');
             $table->string('name');
             $table->string('url');
+            $table->integer('capitulos');
         });
     }
 
@@ -26,6 +29,6 @@ class Books extends Migration
      */
     public function down()
     {
-        Schema::drop('books');
+        Schema::drop('libros');
     }
 }

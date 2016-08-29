@@ -279,6 +279,7 @@ class ComposerStaticInit96e4d63811d5fe885df1d82d935961cb
     public static $classMap = array (
         'Answers' => __DIR__ . '/../..' . '/database/migrations/2016_08_21_031751_answers.php',
         'Books' => __DIR__ . '/../..' . '/database/migrations/2016_08_19_170853_books.php',
+        'Capitulos' => __DIR__ . '/../..' . '/database/migrations/2016_08_29_202841_capitulos.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreatePermissionRoleTable' => __DIR__ . '/../..' . '/database/migrations/2015_01_26_115523_create_permission_role_table.php',
         'CreatePermissionUserTable' => __DIR__ . '/../..' . '/database/migrations/2015_02_09_132439_create_permission_user_table.php',
@@ -359,6 +360,7 @@ class ComposerStaticInit96e4d63811d5fe885df1d82d935961cb
         'Hamcrest\\Util' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Util.php',
         'Hamcrest\\Xml\\HasXPath' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Xml/HasXPath.php',
         'IlluminateQueueClosure' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/IlluminateQueueClosure.php',
+        'Libros' => __DIR__ . '/../..' . '/database/migrations/2016_08_29_202006_libros.php',
         'PHPUnit_Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit_Extensions_GroupTestSuite' => __DIR__ . '/..' . '/phpunit/phpunit/src/Extensions/GroupTestSuite.php',
         'PHPUnit_Extensions_PhptTestCase' => __DIR__ . '/..' . '/phpunit/phpunit/src/Extensions/PhptTestCase.php',

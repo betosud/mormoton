@@ -672,9 +672,9 @@
 
                                                 <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
 
-                                                    <h1 style="text-align: center;">Bienvenido a Mormoton</h1>
+                                                    <h1 style="text-align: center;">Mormoton</h1>
 
-                                                    <p>Te damos la bienvenida a mormoton es necesario que establescas una nueva contraseña</p>
+                                                    <p>Establece una nueva contraseña</p>
                                                 </td>
                                             </tr>
                                             </tbody></table>

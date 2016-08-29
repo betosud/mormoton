@@ -15,6 +15,10 @@ class Answers extends Migration
         Schema::create('answers',function (Blueprint $table){
             $table->increments('id');
             $table->string('answer');
+            $table->integer('correcta');
+            $table->string('canonico');
+            $table->string('libro');
+            $table->string('versiculos');
             $table->timestamps();
             $table->softDeletes();
         });

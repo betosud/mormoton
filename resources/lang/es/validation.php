@@ -140,6 +140,9 @@ return [
         'time'                  => 'hora',
         'subject'               => 'asunto',
         'message'               => 'mensaje',
+        'idbook'                => 'Libro',
+        'question'              => 'Pregunta',
+        'answer'                => 'Respuesta',
     ],
 
 ];
