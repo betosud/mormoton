@@ -46,6 +46,7 @@
     };
 
     $("#guardarpregunta").click(function () {
+        mostrar();
         var form=$('#form-add-question')
         var url=form.attr('action');
         var data=form.serialize();
@@ -57,7 +58,7 @@
 
             data:data,
             success:function(salida){
-
+                ocultar();
 
                 toastr.success('La pregunta se Guardo Correctamente',{timeOut: 1500});
                 $('#question').val('');
@@ -66,8 +67,10 @@
                 $('#newmodal').modal('hide');
                 listarquestion();
 
+
             },
             error:function(msj){
+                ocultar();
 //                    $('#loading').modal('hide')
 //                     toastr.warning('Error al enviar el mensaje compruebe su conexion',{timeOut: 4000});
                 var result =msj.responseJSON;
@@ -82,7 +85,19 @@
     })
     $(document).ready(function() {
         listarquestion();
+        ocultar();
     });
+
+
+    function mostrar() {
+        document.getElementById("loader").style.display = "block";
+
+    }
+    function ocultar() {
+        document.getElementById("loader").style.display = "none";
+
+    }
+
 </script>
 
 @endsection
