@@ -14,6 +14,8 @@ class Answers extends Migration
     {
         Schema::create('answers',function (Blueprint $table){
             $table->increments('id');
+            $table->integer('idquestion')->unsigned();
+            $table->foreign('idquestion')->references('id')->on('question');
             $table->string('answer');
             $table->integer('correcta');
             $table->string('canonico');

@@ -26,20 +26,48 @@ class QuestionsController extends Controller
     public function store(Request $request){
         $rules=array('idbook'=>'required',
             'question'=>'required',
-            'answer'=>'required'
+            'answer'=>'required',
+            'libro'=>'required',
+            'capitulo'=>'required',
+            'versiculos'=>'required',
+            'option1'=>'required',
+            'option2'=>'required',
+            'option3'=>'required',
         );
 
 
         $this->validate($request,$rules);
-        
-        
-        $answer=new answers($request->all());
-        $answer->save();
-        $request['idrespuesta']=$answer->id;
         $request['user_id']=$request->user()->id;
-
         $question=new question($request->all());
         $question->save();
+
+        $request['idquestion']=$question->id;
+        $request['correcta']=1;
+        $request['canonico']=$request->idbook;
+
+        $respuestacorrecta=new answers($request->all());
+        $respuestacorrecta->save();
+
+
+
+
+        //guardar opciones
+
+        foreach($request->all() as $key => $value) {
+            if ($key=='option1') {
+                $opcion=new answers(array('idquestion'=>$question->id,'answer'=>$value,'correcta'=>0,'canonico'=>$request['canonico'],'libro'=>$request['libro'],'versiculos'=>$request['versiculos']));
+                $opcion->save();
+            }
+            if ($key=='option2') {
+                $opcion=new answers(array('idquestion'=>$question->id,'answer'=>$value,'correcta'=>0,'canonico'=>$request['canonico'],'libro'=>$request['libro'],'versiculos'=>$request['versiculos']));
+                $opcion->save();
+            }
+            if ($key=='option3') {
+                $opcion=new answers(array('idquestion'=>$question->id,'answer'=>$value,'correcta'=>0,'canonico'=>$request['canonico'],'libro'=>$request['libro'],'versiculos'=>$request['versiculos']));
+                $opcion->save();
+            }
+        }
+
 
         
     }

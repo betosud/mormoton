@@ -3,6 +3,7 @@
 namespace mormoton;
 
 use Illuminate\Database\Eloquent\Model;
+use mormoton\answers;
 use SoftDeletes;
 class question extends Model
 {
@@ -11,14 +12,16 @@ class question extends Model
     protected $table = 'question';
 
 
-    protected $fillable = ['id','idbook','question','idrespuesta','user_id'];
+    protected $fillable = ['id','idbook','question','user_id'];
 
     public function scopeByUser($query, $user_id){
         $query->where('user_id', $user_id);
     }
 
-    public function respuesta(){
-        return $this->hasOne('mormoton\answers', 'id', 'idrespuesta');
+    public function getRespuestacorrectaAttribute(){
+        $respuesta= answers::where('idquestion',$this->id)->where('correcta','1')->first();
+//dd($respuesta->answer);
+        return $respuesta->answer;
     }
     public function userdata(){
         return $this->hasOne('mormoton\User', 'id', 'user_id');

@@ -17,7 +17,6 @@ class Questions extends Migration
             $table->integer('idbook')->unsigned();
             $table->foreign('idbook')->references('id')->on('books');
             $table->string('question');
-            $table->string('idrespuesta');
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();

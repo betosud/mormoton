@@ -25,4 +25,7 @@ Route::post('storequestions',['uses'=>'QuestionsController@store','as'=>'storequ
 Route::get('listarquestion',['uses'=>'QuestionsController@listar','as'=>'listarquestion','middleware'=>'auth','middleware' => 'permission:view.question']);
 
 
+//combos
+Route::get('combos/{nombre}/{valor}',['uses'=>'CombosController@listar','as'=>'combos','middleware'=>'auth']);
+
 Route::get('/home', 'HomeController@index');

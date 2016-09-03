@@ -35,8 +35,18 @@ class VerifyRole
      */
     public function handle($request, Closure $next, $role)
     {
-        if ($this->auth->check() && $this->auth->user()->is($role)) {
-            return $next($request);
+//        if ($this->auth->check() && $this->auth->user()->is($role)) {
+//            return $next($request);
+//        }
+
+        if ($this->auth->guest()) {
+            return redirect()->guest('login');
+        }
+        else {
+
+            if ($this->auth->check() && $this->auth->user()->is($role)) {
+                return $next($request);
+            }
         }
 
         throw new RoleDeniedException($role);
