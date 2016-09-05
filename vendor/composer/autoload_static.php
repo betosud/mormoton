@@ -277,7 +277,7 @@ class ComposerStaticInit96e4d63811d5fe885df1d82d935961cb
     );
 
     public static $classMap = array (
-        'Answers' => __DIR__ . '/../..' . '/database/migrations/2016_08_21_031751_answers.php',
+        'Answers' => __DIR__ . '/../..' . '/database/migrations/2016_08_30_151245_Answers.php',
         'Books' => __DIR__ . '/../..' . '/database/migrations/2016_08_19_170853_books.php',
         'Capitulos' => __DIR__ . '/../..' . '/database/migrations/2016_08_29_202841_capitulos.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
@@ -291,6 +291,7 @@ class ComposerStaticInit96e4d63811d5fe885df1d82d935961cb
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
         'File_Iterator_Factory' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Factory.php',
+        'Games' => __DIR__ . '/../..' . '/database/migrations/2016_09_05_014711_Games.php',
         'Hamcrest\\Arrays\\IsArray' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArray.php',
         'Hamcrest\\Arrays\\IsArrayContaining' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContaining.php',
         'Hamcrest\\Arrays\\IsArrayContainingInAnyOrder' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContainingInAnyOrder.php',
@@ -795,6 +796,7 @@ class ComposerStaticInit96e4d63811d5fe885df1d82d935961cb
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
         'TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
+        'Typelevel' => __DIR__ . '/../..' . '/database/migrations/2016_09_05_012713_typelevel.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
