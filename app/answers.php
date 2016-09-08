@@ -4,6 +4,7 @@ namespace mormoton;
 
 use Illuminate\Database\Eloquent\Model;
 use SoftDeletes;
+
 class answers extends Model
 {
 

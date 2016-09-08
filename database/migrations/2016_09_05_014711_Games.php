@@ -21,6 +21,8 @@ class Games extends Migration
             $table->datetime('timestart');
             $table->datetime('endtime');
             $table->integer('score');
+            $table->string('token');
+
             $table->timestamps();
             $table->softDeletes();
         });

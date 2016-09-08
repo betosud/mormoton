@@ -143,6 +143,7 @@ return [
         'idbook'                => 'Libro',
         'question'              => 'Pregunta',
         'answer'                => 'Respuesta',
+        'typelevel'                => 'Nivel',
     ],
 
 ];

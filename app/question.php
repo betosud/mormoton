@@ -5,6 +5,7 @@ namespace mormoton;
 use Illuminate\Database\Eloquent\Model;
 use mormoton\answers;
 use SoftDeletes;
+
 class question extends Model
 {
 
@@ -28,5 +29,33 @@ class question extends Model
     }
     public function libro(){
         return $this->hasOne('mormoton\books', 'id', 'idbook');
+    }
+
+
+    public function answers(){
+        $answers=answers::where('idquestion',$this->id)->get();
+        $total=count($answers);
+//        $revueltas=array();
+        while($total>0){
+//        for($i=0;$i<4;$i++){
+            $answersaux=array();
+            $rand=rand(0,$total-1);
+            $revueltas[]=$answers[$rand];
+
+            unset($answers[$rand]);
+            foreach ($answers as $answer){
+                $answersaux[]=$answer;
+            }
+            $answers=$answersaux;
+
+//            if (isset($answers))
+                $total=count($answers);
+//            else
+//                $total=0;
+
+
+        }
+
+        return $revueltas;
     }
 }

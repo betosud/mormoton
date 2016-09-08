@@ -29,3 +29,11 @@ Route::get('listarquestion',['uses'=>'QuestionsController@listar','as'=>'listarq
 Route::get('combos/{nombre}/{valor}',['uses'=>'CombosController@listar','as'=>'combos','middleware'=>'auth']);
 
 Route::get('/home', 'HomeController@index');
+
+
+
+
+//games
+Route::get('newgame',['uses'=>'GameController@newgame','as'=>'newgame','middleware'=>'auth','middleware']);
+Route::post('gamemormoton',['uses'=>'GameController@store','as'=>'gamemormoton','middleware'=>'auth','middleware']);
+Route::post('savegame',['uses'=>'GameController@savegame','as'=>'savegame','middleware'=>'auth','middleware']);
