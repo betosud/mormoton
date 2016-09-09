@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Anwergame extends Migration
+class Questionsgame extends Migration
 {
     /**
      * Run the migrations.
@@ -12,7 +12,7 @@ class Anwergame extends Migration
      */
     public function up()
     {
-        Schema::create('answergame',function (Blueprint $table){
+        Schema::create('questionsgame',function (Blueprint $table){
             $table->increments('id');
             $table->integer('idgame')->unsigned();
             $table->foreign('idgame')->references('id')->on('games');
@@ -30,6 +30,6 @@ class Anwergame extends Migration
      */
     public function down()
     {
-        Schema::drop('answergame');
+        Schema::drop('questionsgame');
     }
 }

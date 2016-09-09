@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">Selecciona una respuesta</div>
+                    <div class="panel-heading">Tiempo Restante {!! $game->endtime !!}</div>
                     <div class="panel-body">
                         {!! Form::open(array('url' => 'savegame', 'method' => 'post','class'=>'form-horizontal','id'=>'form-add-question')) !!}
 

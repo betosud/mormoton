@@ -14,6 +14,7 @@ class AuthServiceProvider extends ServiceProvider
      */
     protected $policies = [
         'mormoton\Model' => 'mormoton\Policies\ModelPolicy',
+        'mormoton\game' => 'mormoton\Policies\ScorePolicy',
     ];
 
     /**

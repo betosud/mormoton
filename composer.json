@@ -9,7 +9,8 @@
         "laravel/framework": "5.2.*",
         "caouecs/laravel-lang": "~3.0",
         "laravelcollective/html": "5.2.*",
-        "bican/roles": "2.1.*"
+        "bican/roles": "2.1.*",
+        "chencha/share": "^5.2"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

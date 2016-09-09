@@ -37,3 +37,4 @@ Route::get('/home', 'HomeController@index');
 Route::get('newgame',['uses'=>'GameController@newgame','as'=>'newgame','middleware'=>'auth','middleware']);
 Route::post('gamemormoton',['uses'=>'GameController@store','as'=>'gamemormoton','middleware'=>'auth','middleware']);
 Route::post('savegame',['uses'=>'GameController@savegame','as'=>'savegame','middleware'=>'auth','middleware']);
+Route::get('score/{id}/{token}',['uses'=>'GameController@score','as'=>'score']);
