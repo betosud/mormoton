@@ -53,6 +53,7 @@ return [
         'array'   => 'Polje :attribute ne smije da image više od :max stavki.',
     ],
     'mimes'                => 'Polje :attribute mora biti fajl tipa: :values.',
+    'mimetypes'            => 'Polje :attribute mora biti fajl tipa: :values.',
     'min'                  => [
         'numeric' => 'Polje :attribute mora biti najmanje :min.',
         'file'    => 'Fajl :attribute mora biti najmanje :min kilobajta.',
@@ -80,6 +81,7 @@ return [
     'string'               => 'Polje :attribute mora biti string.',
     'timezone'             => 'The :attribute must be a valid zone.',
     'unique'               => 'Vrijednost za polje :attribute već postoji.',
+    'uploaded'             => 'The :attribute uploading failed.',
     'url'                  => 'Format polja :attribute ne važi.',
 
     /*

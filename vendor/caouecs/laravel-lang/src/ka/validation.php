@@ -53,6 +53,7 @@ return [
         'array'   => ':attribute-ის რაოდენობა არ უნდა აღემატებოდეს :max-ს.',
     ],
     'mimes'                => ':attribute უნდა იყოს შემდეგი ტიპის: :values.',
+    'mimetypes'            => ':attribute უნდა იყოს შემდეგი ტიპის: :values.',
     'min'                  => [
         'numeric' => ':attribute უნდა იყოს მინიმუმ :min.',
         'file'    => ':attribute უნდა იყოს მინიმუმ :min კილობაიტი.',
@@ -80,6 +81,7 @@ return [
     'string'               => ':attribute უნდა იყოს ტექსტი.',
     'timezone'             => ':attribute უნდა იყოს სასაათო სარტყელი.',
     'unique'               => 'ასეთი :attribute უკვე არსებობს.',
+    'uploaded'             => 'The :attribute uploading failed.',
     'url'                  => ':attribute უნდა იყოს URL მისამართი.',
 
     /*

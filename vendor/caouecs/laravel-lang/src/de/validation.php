@@ -53,6 +53,7 @@ return [
         'array'   => ':attribute darf nicht mehr als :max Elemente haben.',
     ],
     'mimes'                => ':attribute muss den Dateityp :values haben.',
+    'mimetypes'            => ':attribute muss den Dateityp :values haben.',
     'min'                  => [
         'numeric' => ':attribute muss mindestens :min sein.',
         'file'    => ':attribute muss mindestens :min Kilobytes groß sein.',
@@ -80,6 +81,7 @@ return [
     'string'               => ':attribute muss ein String sein.',
     'timezone'             => ':attribute muss eine gültige Zeitzone sein.',
     'unique'               => ':attribute ist schon vergeben.',
+    'uploaded'             => 'The :attribute uploading failed.',
     'url'                  => 'Das Format von :attribute ist ungültig.',
 
     /*

@@ -53,6 +53,7 @@ return [
         'array'   => ':attribute får inte innehålla mer än :max objekt.',
     ],
     'mimes'                => ':attribute måste vara en fil av typen: :values.',
+    'mimetypes'            => ':attribute måste vara en fil av typen: :values.',
     'min'                  => [
         'numeric' => ':attribute måste vara större än :min.',
         'file'    => ':attribute måste vara minst :min kilobyte stor.',
@@ -80,6 +81,7 @@ return [
     'string'               => ':attribute måste vara en sträng.',
     'timezone'             => ':attribute måste vara en giltig tidszon.',
     'unique'               => ':attribute används redan.',
+    'uploaded'             => 'The :attribute uploading failed.',
     'url'                  => ':attribute har ett ogiltigt format.',
 
     /*

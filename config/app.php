@@ -161,6 +161,7 @@ return [
         Bican\Roles\RolesServiceProvider::class,
 
         Collective\Html\HtmlServiceProvider::class,
+        Tshafer\SocialShare\ServiceProvider::class
 
     ],
 
@@ -211,7 +212,7 @@ return [
 
         'Form' => Collective\Html\FormFacade::class,
       'Html' => Collective\Html\HtmlFacade::class,
-
+        'Share' => Tshafer\SocialShare\Facades\SocialShare::class
     ],
 
 ];

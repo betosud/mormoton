@@ -53,6 +53,7 @@ return [
         'array'   => ':attribute må ikke indeholde mere end :max elementer.',
     ],
     'mimes'                => ':attribute skal være en fil af typen: :values.',
+    'mimetypes'            => ':attribute skal være en fil af typen: :values.',
     'min'                  => [
         'numeric' => ':attribute skal være mindst :min.',
         'file'    => ':attribute skal være mindst :min kilobytes.',
@@ -80,6 +81,7 @@ return [
     'string'               => ':attribute skal være en streng.',
     'timezone'             => ':attribute skal være en gyldig tidszone.',
     'unique'               => ':attribute er allerede taget.',
+    'uploaded'             => 'The :attribute uploading failed.',
     'url'                  => ':attribute formatet er ugyldigt.',
 
     /*

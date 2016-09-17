@@ -53,6 +53,7 @@ return [
         'array'   => 'Reiturinn :attribute verður að innihalda færri en :max stök.',
     ],
     'mimes'                => 'Reiturinn :attribute verður að vera skrá af gerðinni: :values.',
+    'mimetypes'            => 'Reiturinn :attribute verður að vera skrá af gerðinni: :values.',
     'min'                  => [
         'numeric' => 'Reiturinn :attribute verður að vera að lágmarki :min tölustafir.',
         'file'    => 'Reiturinn :attribute verður að vera að lágmarki :min kílóbæt.',
@@ -80,6 +81,7 @@ return [
     'string'               => 'The :attribute must be a string.',
     'timezone'             => 'Reiturinn :attribute verður að vera rétt tímabelti.',
     'unique'               => 'Reiturinn :attribute er því miður ekki leyfilegur. Það er annar eins.',
+    'uploaded'             => 'The :attribute uploading failed.',
     'url'                  => 'Reiturinn :attribute verður að vera netslóð.',
 
     /*

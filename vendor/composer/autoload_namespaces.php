@@ -13,6 +13,5 @@ return array(
     'JakubOnderka\\PhpConsoleColor' => array($vendorDir . '/jakub-onderka/php-console-color/src'),
     'Doctrine\\Common\\Inflector\\' => array($vendorDir . '/doctrine/inflector/lib'),
     'Cron' => array($vendorDir . '/mtdowling/cron-expression/src'),
-    'Chencha\\Share' => array($vendorDir . '/chencha/share/src'),
     'Bican\\Roles' => array($vendorDir . '/bican/roles/src'),
 );

@@ -53,6 +53,7 @@ return [
         'array'   => ':attribute non podet tènnere prus de :max elementos.',
     ],
     'mimes'                => ':attribute depet èssere de tipu: :values.',
+    'mimetypes'            => ':attribute depet èssere de tipu: :values.',
     'min'                  => [
         'numeric' => ':attribute depet bàlere a su mancu :min.',
         'file'    => ':attribute depet èssere prus mannu de :min kilobytes.',
@@ -80,6 +81,7 @@ return [
     'string'               => 'The :attribute must be a string.',
     'timezone'             => ':attribute depet èssere una zona bàlida.',
     'unique'               => ':attribute est istadu giai impreadu.',
+    'uploaded'             => 'The :attribute uploading failed.',
     'url'                  => ":attribute depet èssere un'URL.",
 
     /*

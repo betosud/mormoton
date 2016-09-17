@@ -13,12 +13,16 @@ use mormoton\Http\Requests;
 use mormoton\level;
 use mormoton\question;
 use mormoton\questionsgame;
+use Tshafer\SocialShare\Share;
+
 
 class GameController extends Controller
 {
     public function newgame(Request $request)
     {
         $combos['books']= books::lists('name','id');
+        
+        
         $combos['level']= level::lists('descripcion','id');
         return view('games.newgame',compact('combos'));
     }
@@ -106,9 +110,20 @@ return $questionsgame;
 
         return view('games.playin',compact('questions','totalquestions','answergame','game'));
     }
-        public function score($id,$token){
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    public function score($id,$token){
             $game=game::findorfail($id);
-            if($game->token===$token) {
+        $urlmormoton=url('score',[$id,$token]);
+
+            if($game->token==$token) {
 
                 return view('games.finish', compact('game'));
             }
@@ -121,28 +136,37 @@ return $questionsgame;
     public function savegame(Request $request){
 
          //verificarpreguntas
+        
         $idgame=$request->id;
+
         $questionsgame=questionsgame::where('idgame',$idgame)->get();
         $aciertos=0;
 
         foreach ($questionsgame as $question){
-            $idquestion=$question->idquestion;
-            $answerid=$request[$question->idquestion];
-            $answer=answers::findorfail($answerid);
-            if($answer->correcta==1){
-                $question['correcta']=1;
-                $question->save();
-                $aciertos++;
+            if(isset($request[$question->idquestion])){
+                $answerid=$request[$question->idquestion];
+
+                $answer=answers::findorfail($answerid);
+
+                if($answer->correcta==1){
+                    $question['correcta']=1;
+                    $question->save();
+                    $aciertos++;
+                }
             }
+
         }
+
+
         $game=game::findorfail($idgame);
         $game['endtime']=new Carbon();
 
-        $game['score']=($aciertos*10)/$game->numquestions;
+        $game['score']=$aciertos;
         $game->save();
-
+//        dd($game);
         return redirect()->route('score',[$game->id,$game->token]);
 //        dd($score);
+
 
     }
 }

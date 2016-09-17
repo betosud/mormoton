@@ -53,6 +53,7 @@ return [
         'array'   => 'O campo :attribute não deverá conter mais de :max elementos.',
     ],
     'mimes'                => 'O campo :attribute deverá conter um ficheiro do tipo: :values.',
+    'mimetypes'            => 'O campo :attribute deverá conter um ficheiro do tipo: :values.',
     'min'                  => [
         'numeric' => 'O campo :attribute deverá ter um valor superior ou igual a :min.',
         'file'    => 'O campo :attribute deverá ter no mínimo :min kilobytes.',
@@ -80,6 +81,7 @@ return [
     'string'               => 'O campo :attribute deverá conter texto.',
     'timezone'             => 'O campo :attribute deverá ter um fuso horário válido.',
     'unique'               => 'O valor indicado para o campo :attribute já se encontra registado.',
+    'uploaded'             => 'O upload do ficheiro :attribute falhou.',
     'url'                  => 'O formato do URL indicado para o campo :attribute é inválido.',
 
     /*

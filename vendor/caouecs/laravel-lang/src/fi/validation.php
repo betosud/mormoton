@@ -53,6 +53,7 @@ return [
         'array'   => 'The :attribute may not have more than :max items.',
     ],
     'mimes'                => ':attribute pitää olla tiedostotyyppi: :values.',
+    'mimetypes'            => ':attribute pitää olla tiedostotyyppi: :values.',
     'min'                  => [
         'numeric' => ':attribute pitää olla vähintään :min.',
         'file'    => ':attribute pitää olla vähintään :min kilobittiä.',
@@ -80,6 +81,7 @@ return [
     'string'               => 'The :attribute must be a string.',
     'timezone'             => 'The :attribute must be a valid zone.',
     'unique'               => ':attribute on jo valittu.',
+    'uploaded'             => 'The :attribute uploading failed.',
     'url'                  => ':attribute URL-osoite on virheellinen.',
 
     /*

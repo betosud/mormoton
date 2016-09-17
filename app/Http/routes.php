@@ -38,3 +38,14 @@ Route::get('newgame',['uses'=>'GameController@newgame','as'=>'newgame','middlewa
 Route::post('gamemormoton',['uses'=>'GameController@store','as'=>'gamemormoton','middleware'=>'auth','middleware']);
 Route::post('savegame',['uses'=>'GameController@savegame','as'=>'savegame','middleware'=>'auth','middleware']);
 Route::get('score/{id}/{token}',['uses'=>'GameController@score','as'=>'score']);
+
+
+//share
+//Route::get('facebook/{id}/{token}', ['uses'=>'GameController@facebook','as'=>'facebook','middleware'=>'auth']);
+
+
+
+Route::get('facebook', function()
+{
+    return Share::load('http://mormoton.app/score/32/5nsDyLE0mtD8H2zdbzg6sjmmGh08Fj', 'My Score')->facebook();
+});

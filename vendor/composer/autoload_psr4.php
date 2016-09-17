@@ -10,6 +10,8 @@ return array(
     'mormoton\\' => array($baseDir . '/app'),
     'XdgBaseDir\\' => array($vendorDir . '/dnoegel/php-xdg-base-dir/src'),
     'Webmozart\\Assert\\' => array($vendorDir . '/webmozart/assert/src'),
+    'Tshafer\\SocialShare\\' => array($vendorDir . '/tshafer/laravel-social-share/src'),
+    'Tshafer\\ServiceProvider\\' => array($vendorDir . '/tshafer/laravel-service-provider/src'),
     'Symfony\\Polyfill\\Util\\' => array($vendorDir . '/symfony/polyfill-util'),
     'Symfony\\Polyfill\\Php56\\' => array($vendorDir . '/symfony/polyfill-php56'),
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),

@@ -53,6 +53,7 @@ return [
         'array'   => 'שדה :attribute לא יכול להכיל יותר מ-:max פריטים.',
     ],
     'mimes'                => 'שדה :attribute צריך להיות קובץ מסוג: :values.',
+    'mimetypes'            => 'שדה :attribute צריך להיות קובץ מסוג: :values.',
     'min'                  => [
         'numeric' => 'שדה :attribute חייב להיות לפחות :min.',
         'file'    => 'שדה :attribute חייב להיות לפחות :min קילובייטים.',
@@ -80,6 +81,7 @@ return [
     'string'               => 'שדה :attribute חייב להיות מחרוזת.',
     'timezone'             => 'שדה :attribute חייב להיות איזור תקני.',
     'unique'               => 'שדה :attribute כבר תפוס.',
+    'uploaded'             => 'The :attribute uploading failed.',
     'url'                  => 'שדה :attribute בעל פורמט שאינו תקין.',
 
     /*

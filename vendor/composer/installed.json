@@ -1,57 +1,5 @@
 [
     {
-        "name": "vlucas/phpdotenv",
-        "version": "v2.3.0",
-        "version_normalized": "2.3.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/vlucas/phpdotenv.git",
-            "reference": "9ca5644c536654e9509b9d257f53c58630eb2a6a"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/9ca5644c536654e9509b9d257f53c58630eb2a6a",
-            "reference": "9ca5644c536654e9509b9d257f53c58630eb2a6a",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.9"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "^4.8 || ^5.0"
-        },
-        "time": "2016-06-14 14:14:52",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.3-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Dotenv\\": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause-Attribution"
-        ],
-        "authors": [
-            {
-                "name": "Vance Lucas",
-                "email": "vance@vancelucas.com",
-                "homepage": "http://www.vancelucas.com"
-            }
-        ],
-        "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
-        "keywords": [
-            "dotenv",
-            "env",
-            "environment"
-        ]
-    },
-    {
         "name": "symfony/polyfill-mbstring",
         "version": "v1.2.0",
         "version_normalized": "1.2.0.0",
@@ -536,68 +484,6 @@
             }
         ],
         "description": "Symfony HttpFoundation Component",
-        "homepage": "https://symfony.com"
-    },
-    {
-        "name": "symfony/event-dispatcher",
-        "version": "v3.1.3",
-        "version_normalized": "3.1.3.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/event-dispatcher.git",
-            "reference": "c0c00c80b3a69132c4e55c3e7db32b4a387615e5"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/c0c00c80b3a69132c4e55c3e7db32b4a387615e5",
-            "reference": "c0c00c80b3a69132c4e55c3e7db32b4a387615e5",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.5.9"
-        },
-        "require-dev": {
-            "psr/log": "~1.0",
-            "symfony/config": "~2.8|~3.0",
-            "symfony/dependency-injection": "~2.8|~3.0",
-            "symfony/expression-language": "~2.8|~3.0",
-            "symfony/stopwatch": "~2.8|~3.0"
-        },
-        "suggest": {
-            "symfony/dependency-injection": "",
-            "symfony/http-kernel": ""
-        },
-        "time": "2016-07-19 10:45:57",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.1-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\EventDispatcher\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony EventDispatcher Component",
         "homepage": "https://symfony.com"
     },
     {
@@ -1700,138 +1586,6 @@
         ]
     },
     {
-        "name": "laravel/framework",
-        "version": "v5.2.43",
-        "version_normalized": "5.2.43.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/laravel/framework.git",
-            "reference": "5490b8f00564bb60839002f86828e27edd1e5610"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/laravel/framework/zipball/5490b8f00564bb60839002f86828e27edd1e5610",
-            "reference": "5490b8f00564bb60839002f86828e27edd1e5610",
-            "shasum": ""
-        },
-        "require": {
-            "classpreloader/classpreloader": "~3.0",
-            "doctrine/inflector": "~1.0",
-            "ext-mbstring": "*",
-            "ext-openssl": "*",
-            "jeremeamia/superclosure": "~2.2",
-            "league/flysystem": "~1.0",
-            "monolog/monolog": "~1.11",
-            "mtdowling/cron-expression": "~1.0",
-            "nesbot/carbon": "~1.20",
-            "paragonie/random_compat": "~1.4",
-            "php": ">=5.5.9",
-            "psy/psysh": "0.7.*",
-            "swiftmailer/swiftmailer": "~5.1",
-            "symfony/console": "2.8.*|3.0.*",
-            "symfony/debug": "2.8.*|3.0.*",
-            "symfony/finder": "2.8.*|3.0.*",
-            "symfony/http-foundation": "2.8.*|3.0.*",
-            "symfony/http-kernel": "2.8.*|3.0.*",
-            "symfony/polyfill-php56": "~1.0",
-            "symfony/process": "2.8.*|3.0.*",
-            "symfony/routing": "2.8.*|3.0.*",
-            "symfony/translation": "2.8.*|3.0.*",
-            "symfony/var-dumper": "2.8.*|3.0.*",
-            "vlucas/phpdotenv": "~2.2"
-        },
-        "replace": {
-            "illuminate/auth": "self.version",
-            "illuminate/broadcasting": "self.version",
-            "illuminate/bus": "self.version",
-            "illuminate/cache": "self.version",
-            "illuminate/config": "self.version",
-            "illuminate/console": "self.version",
-            "illuminate/container": "self.version",
-            "illuminate/contracts": "self.version",
-            "illuminate/cookie": "self.version",
-            "illuminate/database": "self.version",
-            "illuminate/encryption": "self.version",
-            "illuminate/events": "self.version",
-            "illuminate/exception": "self.version",
-            "illuminate/filesystem": "self.version",
-            "illuminate/hashing": "self.version",
-            "illuminate/http": "self.version",
-            "illuminate/log": "self.version",
-            "illuminate/mail": "self.version",
-            "illuminate/pagination": "self.version",
-            "illuminate/pipeline": "self.version",
-            "illuminate/queue": "self.version",
-            "illuminate/redis": "self.version",
-            "illuminate/routing": "self.version",
-            "illuminate/session": "self.version",
-            "illuminate/support": "self.version",
-            "illuminate/translation": "self.version",
-            "illuminate/validation": "self.version",
-            "illuminate/view": "self.version",
-            "tightenco/collect": "self.version"
-        },
-        "require-dev": {
-            "aws/aws-sdk-php": "~3.0",
-            "mockery/mockery": "~0.9.4",
-            "pda/pheanstalk": "~3.0",
-            "phpunit/phpunit": "~4.1",
-            "predis/predis": "~1.0",
-            "symfony/css-selector": "2.8.*|3.0.*",
-            "symfony/dom-crawler": "2.8.*|3.0.*"
-        },
-        "suggest": {
-            "aws/aws-sdk-php": "Required to use the SQS queue driver and SES mail driver (~3.0).",
-            "doctrine/dbal": "Required to rename columns and drop SQLite columns (~2.4).",
-            "fzaninotto/faker": "Required to use the eloquent factory builder (~1.4).",
-            "guzzlehttp/guzzle": "Required to use the Mailgun and Mandrill mail drivers and the ping methods on schedules (~5.3|~6.0).",
-            "league/flysystem-aws-s3-v3": "Required to use the Flysystem S3 driver (~1.0).",
-            "league/flysystem-rackspace": "Required to use the Flysystem Rackspace driver (~1.0).",
-            "pda/pheanstalk": "Required to use the beanstalk queue driver (~3.0).",
-            "predis/predis": "Required to use the redis cache and queue drivers (~1.0).",
-            "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (~2.0).",
-            "symfony/css-selector": "Required to use some of the crawler integration testing tools (2.8.*|3.0.*).",
-            "symfony/dom-crawler": "Required to use most of the crawler integration testing tools (2.8.*|3.0.*).",
-            "symfony/psr-http-message-bridge": "Required to psr7 bridging features (0.2.*)."
-        },
-        "time": "2016-08-10 12:23:59",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "5.2-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "classmap": [
-                "src/Illuminate/Queue/IlluminateQueueClosure.php"
-            ],
-            "files": [
-                "src/Illuminate/Foundation/helpers.php",
-                "src/Illuminate/Support/helpers.php"
-            ],
-            "psr-4": {
-                "Illuminate\\": "src/Illuminate/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Taylor Otwell",
-                "email": "taylorotwell@gmail.com"
-            }
-        ],
-        "description": "The Laravel Framework.",
-        "homepage": "http://laravel.com",
-        "keywords": [
-            "framework",
-            "laravel"
-        ]
-    },
-    {
         "name": "fzaninotto/faker",
         "version": "v1.6.0",
         "version_normalized": "1.6.0.0",
@@ -1994,57 +1748,6 @@
             "test double",
             "testing"
         ]
-    },
-    {
-        "name": "symfony/yaml",
-        "version": "v3.1.3",
-        "version_normalized": "3.1.3.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/yaml.git",
-            "reference": "1819adf2066880c7967df7180f4f662b6f0567ac"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/yaml/zipball/1819adf2066880c7967df7180f4f662b6f0567ac",
-            "reference": "1819adf2066880c7967df7180f4f662b6f0567ac",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.5.9"
-        },
-        "time": "2016-07-17 14:02:08",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.1-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\Yaml\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony Yaml Component",
-        "homepage": "https://symfony.com"
     },
     {
         "name": "sebastian/version",
@@ -3203,48 +2906,6 @@
         "homepage": "https://symfony.com"
     },
     {
-        "name": "caouecs/laravel-lang",
-        "version": "3.0.11",
-        "version_normalized": "3.0.11.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/caouecs/Laravel-lang.git",
-            "reference": "812bedaea2c2fcf8bc2219cb0729116cf96380ef"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/caouecs/Laravel-lang/zipball/812bedaea2c2fcf8bc2219cb0729116cf96380ef",
-            "reference": "812bedaea2c2fcf8bc2219cb0729116cf96380ef",
-            "shasum": ""
-        },
-        "require-dev": {
-            "friendsofphp/php-cs-fixer": "^1.10"
-        },
-        "suggest": {
-            "overtrue/laravel-lang": "Command to add languages in your project"
-        },
-        "time": "2016-08-10 19:34:20",
-        "type": "library",
-        "installation-source": "dist",
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "caouecs",
-                "email": "caouecs@caouecs.net"
-            }
-        ],
-        "description": "Languages for Laravel",
-        "keywords": [
-            "lang",
-            "languages",
-            "laravel",
-            "lpm"
-        ]
-    },
-    {
         "name": "laravelcollective/html",
         "version": "v5.2.4",
         "version_normalized": "5.2.4.0",
@@ -3400,38 +3061,100 @@
         ]
     },
     {
-        "name": "chencha/share",
-        "version": "5.2.1",
-        "version_normalized": "5.2.1.0",
+        "name": "vlucas/phpdotenv",
+        "version": "v2.4.0",
+        "version_normalized": "2.4.0.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/prodeveloper/social-share.git",
-            "reference": "c25fff7eaac8352df0195ead424de28335464303"
+            "url": "https://github.com/vlucas/phpdotenv.git",
+            "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/prodeveloper/social-share/zipball/c25fff7eaac8352df0195ead424de28335464303",
-            "reference": "c25fff7eaac8352df0195ead424de28335464303",
+            "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
+            "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
             "shasum": ""
         },
         "require": {
-            "illuminate/support": "^5.0",
-            "php": ">=5.4.0"
+            "php": ">=5.3.9"
         },
         "require-dev": {
-            "guzzlehttp/guzzle": ">=5.3",
-            "mockery/mockery": "^0.9.4",
-            "orchestra/testbench": "~3.0"
+            "phpunit/phpunit": "^4.8 || ^5.0"
         },
-        "time": "2016-03-24 08:05:57",
+        "time": "2016-09-01 10:05:43",
         "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.4-dev"
+            }
+        },
         "installation-source": "dist",
         "autoload": {
-            "psr-0": {
-                "Chencha\\Share": "src/"
+            "psr-4": {
+                "Dotenv\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause-Attribution"
+        ],
+        "authors": [
+            {
+                "name": "Vance Lucas",
+                "email": "vance@vancelucas.com",
+                "homepage": "http://www.vancelucas.com"
+            }
+        ],
+        "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
+        "keywords": [
+            "dotenv",
+            "env",
+            "environment"
+        ]
+    },
+    {
+        "name": "symfony/event-dispatcher",
+        "version": "v3.1.4",
+        "version_normalized": "3.1.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/event-dispatcher.git",
+            "reference": "c0c00c80b3a69132c4e55c3e7db32b4a387615e5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/c0c00c80b3a69132c4e55c3e7db32b4a387615e5",
+            "reference": "c0c00c80b3a69132c4e55c3e7db32b4a387615e5",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.5.9"
+        },
+        "require-dev": {
+            "psr/log": "~1.0",
+            "symfony/config": "~2.8|~3.0",
+            "symfony/dependency-injection": "~2.8|~3.0",
+            "symfony/expression-language": "~2.8|~3.0",
+            "symfony/stopwatch": "~2.8|~3.0"
+        },
+        "suggest": {
+            "symfony/dependency-injection": "",
+            "symfony/http-kernel": ""
+        },
+        "time": "2016-07-19 10:45:57",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.1-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\EventDispatcher\\": ""
             },
-            "classmap": [
-                "tests/TestCase.php"
+            "exclude-from-classmap": [
+                "/Tests/"
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -3440,23 +3163,305 @@
         ],
         "authors": [
             {
-                "name": "thujohn",
-                "email": "jonathan.thuau@gmail.com"
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
             },
             {
-                "name": "chencha",
-                "email": "jacob@chenchatech.com"
-            },
-            {
-                "name": "datashaman",
-                "email": "marlinf@datashaman.com"
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
             }
         ],
-        "description": "Share links with Laravel 5",
+        "description": "Symfony EventDispatcher Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "laravel/framework",
+        "version": "v5.2.45",
+        "version_normalized": "5.2.45.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/laravel/framework.git",
+            "reference": "2a79f920d5584ec6df7cf996d922a742d11095d1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/laravel/framework/zipball/2a79f920d5584ec6df7cf996d922a742d11095d1",
+            "reference": "2a79f920d5584ec6df7cf996d922a742d11095d1",
+            "shasum": ""
+        },
+        "require": {
+            "classpreloader/classpreloader": "~3.0",
+            "doctrine/inflector": "~1.0",
+            "ext-mbstring": "*",
+            "ext-openssl": "*",
+            "jeremeamia/superclosure": "~2.2",
+            "league/flysystem": "~1.0",
+            "monolog/monolog": "~1.11",
+            "mtdowling/cron-expression": "~1.0",
+            "nesbot/carbon": "~1.20",
+            "paragonie/random_compat": "~1.4",
+            "php": ">=5.5.9",
+            "psy/psysh": "0.7.*",
+            "swiftmailer/swiftmailer": "~5.1",
+            "symfony/console": "2.8.*|3.0.*",
+            "symfony/debug": "2.8.*|3.0.*",
+            "symfony/finder": "2.8.*|3.0.*",
+            "symfony/http-foundation": "2.8.*|3.0.*",
+            "symfony/http-kernel": "2.8.*|3.0.*",
+            "symfony/polyfill-php56": "~1.0",
+            "symfony/process": "2.8.*|3.0.*",
+            "symfony/routing": "2.8.*|3.0.*",
+            "symfony/translation": "2.8.*|3.0.*",
+            "symfony/var-dumper": "2.8.*|3.0.*",
+            "vlucas/phpdotenv": "~2.2"
+        },
+        "replace": {
+            "illuminate/auth": "self.version",
+            "illuminate/broadcasting": "self.version",
+            "illuminate/bus": "self.version",
+            "illuminate/cache": "self.version",
+            "illuminate/config": "self.version",
+            "illuminate/console": "self.version",
+            "illuminate/container": "self.version",
+            "illuminate/contracts": "self.version",
+            "illuminate/cookie": "self.version",
+            "illuminate/database": "self.version",
+            "illuminate/encryption": "self.version",
+            "illuminate/events": "self.version",
+            "illuminate/exception": "self.version",
+            "illuminate/filesystem": "self.version",
+            "illuminate/hashing": "self.version",
+            "illuminate/http": "self.version",
+            "illuminate/log": "self.version",
+            "illuminate/mail": "self.version",
+            "illuminate/pagination": "self.version",
+            "illuminate/pipeline": "self.version",
+            "illuminate/queue": "self.version",
+            "illuminate/redis": "self.version",
+            "illuminate/routing": "self.version",
+            "illuminate/session": "self.version",
+            "illuminate/support": "self.version",
+            "illuminate/translation": "self.version",
+            "illuminate/validation": "self.version",
+            "illuminate/view": "self.version",
+            "tightenco/collect": "self.version"
+        },
+        "require-dev": {
+            "aws/aws-sdk-php": "~3.0",
+            "mockery/mockery": "~0.9.4",
+            "pda/pheanstalk": "~3.0",
+            "phpunit/phpunit": "~4.1",
+            "predis/predis": "~1.0",
+            "symfony/css-selector": "2.8.*|3.0.*",
+            "symfony/dom-crawler": "2.8.*|3.0.*"
+        },
+        "suggest": {
+            "aws/aws-sdk-php": "Required to use the SQS queue driver and SES mail driver (~3.0).",
+            "doctrine/dbal": "Required to rename columns and drop SQLite columns (~2.4).",
+            "fzaninotto/faker": "Required to use the eloquent factory builder (~1.4).",
+            "guzzlehttp/guzzle": "Required to use the Mailgun and Mandrill mail drivers and the ping methods on schedules (~5.3|~6.0).",
+            "league/flysystem-aws-s3-v3": "Required to use the Flysystem S3 driver (~1.0).",
+            "league/flysystem-rackspace": "Required to use the Flysystem Rackspace driver (~1.0).",
+            "pda/pheanstalk": "Required to use the beanstalk queue driver (~3.0).",
+            "predis/predis": "Required to use the redis cache and queue drivers (~1.0).",
+            "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (~2.0).",
+            "symfony/css-selector": "Required to use some of the crawler integration testing tools (2.8.*|3.0.*).",
+            "symfony/dom-crawler": "Required to use most of the crawler integration testing tools (2.8.*|3.0.*).",
+            "symfony/psr-http-message-bridge": "Required to use psr7 bridging features (0.2.*)."
+        },
+        "time": "2016-08-26 11:44:52",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "5.2-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/Illuminate/Queue/IlluminateQueueClosure.php"
+            ],
+            "files": [
+                "src/Illuminate/Foundation/helpers.php",
+                "src/Illuminate/Support/helpers.php"
+            ],
+            "psr-4": {
+                "Illuminate\\": "src/Illuminate/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com"
+            }
+        ],
+        "description": "The Laravel Framework.",
+        "homepage": "http://laravel.com",
         "keywords": [
+            "framework",
+            "laravel"
+        ]
+    },
+    {
+        "name": "caouecs/laravel-lang",
+        "version": "3.0.13",
+        "version_normalized": "3.0.13.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/caouecs/Laravel-lang.git",
+            "reference": "f888bf98fefd4fb3b141cc249be43d4d98e5b1c4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/caouecs/Laravel-lang/zipball/f888bf98fefd4fb3b141cc249be43d4d98e5b1c4",
+            "reference": "f888bf98fefd4fb3b141cc249be43d4d98e5b1c4",
+            "shasum": ""
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "^1.10"
+        },
+        "suggest": {
+            "overtrue/laravel-lang": "Command to add languages in your project"
+        },
+        "time": "2016-09-13 06:19:37",
+        "type": "library",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "caouecs",
+                "email": "caouecs@caouecs.net"
+            }
+        ],
+        "description": "Languages for Laravel",
+        "keywords": [
+            "lang",
+            "languages",
             "laravel",
-            "laravel5",
-            "share"
+            "lpm"
+        ]
+    },
+    {
+        "name": "symfony/yaml",
+        "version": "v3.1.4",
+        "version_normalized": "3.1.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/yaml.git",
+            "reference": "f291ed25eb1435bddbe8a96caaef16469c2a092d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/yaml/zipball/f291ed25eb1435bddbe8a96caaef16469c2a092d",
+            "reference": "f291ed25eb1435bddbe8a96caaef16469c2a092d",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.5.9"
+        },
+        "time": "2016-09-02 02:12:52",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.1-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Yaml\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Yaml Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "tshafer/laravel-service-provider",
+        "version": "1.0.3",
+        "version_normalized": "1.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/tshafer/laravel-service-provider.git",
+            "reference": "06d0fc20990684dad3464d9f850c5e7c84d208a9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/tshafer/laravel-service-provider/zipball/06d0fc20990684dad3464d9f850c5e7c84d208a9",
+            "reference": "06d0fc20990684dad3464d9f850c5e7c84d208a9",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/support": "5.1.*|5.2.*|5.3.*",
+            "php": ">=5.5.9"
+        },
+        "time": "2016-08-05 04:44:04",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Tshafer\\ServiceProvider\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "DRY Service Provider for Laravel 5 Packages"
+    },
+    {
+        "name": "tshafer/laravel-social-share",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/tshafer/laravel-social-share.git",
+            "reference": "35210585f05d42e58c809b8d6298b640c344f011"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/tshafer/laravel-social-share/zipball/35210585f05d42e58c809b8d6298b640c344f011",
+            "reference": "35210585f05d42e58c809b8d6298b640c344f011",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.5.9",
+            "tshafer/laravel-service-provider": "1.0.*"
+        },
+        "time": "2015-12-29 04:06:53",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Tshafer\\SocialShare\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
         ]
     }
 ]

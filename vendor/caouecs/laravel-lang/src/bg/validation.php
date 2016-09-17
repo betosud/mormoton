@@ -53,6 +53,7 @@ return [
         'array'   => 'Полето :attribute трябва да има по-малко от :max елемента.',
     ],
     'mimes'                => 'Полето :attribute трябва да бъде файл от тип: :values.',
+    'mimetypes'            => 'Полето :attribute трябва да бъде файл от тип: :values.',
     'min'                  => [
         'numeric' => 'Полето :attribute трябва да бъде минимум :min.',
         'file'    => 'Полето :attribute трябва да бъде минимум :min килобайта.',
@@ -80,6 +81,7 @@ return [
     'string'               => 'Полето :attribute трябва да бъде знаков низ.',
     'timezone'             => 'Полето :attribute трябва да съдържа валидна часова зона.',
     'unique'               => 'Полето :attribute вече съществува.',
+    'uploaded'             => 'The :attribute uploading failed.',
     'url'                  => 'Полето :attribute е в невалиден формат.',
 
     /*

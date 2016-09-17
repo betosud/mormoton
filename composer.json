@@ -10,7 +10,7 @@
         "caouecs/laravel-lang": "~3.0",
         "laravelcollective/html": "5.2.*",
         "bican/roles": "2.1.*",
-        "chencha/share": "^5.2"
+        "tshafer/laravel-social-share": "^1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

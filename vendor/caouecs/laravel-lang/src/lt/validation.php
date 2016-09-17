@@ -53,6 +53,7 @@ return [
         'array'   => 'Elementų kiekis lauke :attribute negali turėti daugiau nei :max elementų.',
     ],
     'mimes'                => 'Lauko reikšmė :attribute turi būti failas vieno iš sekančių tipų: :values.',
+    'mimetypes'            => 'Lauko reikšmė :attribute turi būti failas vieno iš sekančių tipų: :values.',
     'min'                  => [
         'numeric' => 'Lauko :attribute reikšmė turi būti ne mažesnė nei :min.',
         'file'    => 'Failo dydis lauke :attribute turi būti ne mažesnis nei :min kilobaitų.',
@@ -80,6 +81,7 @@ return [
     'string'               => 'Laukas :attribute turi būti tekstinis.',
     'timezone'             => 'Lauko :attribute reikšmė turi būti galiojanti laiko zona.',
     'unique'               => 'Tokia :attribute reikšmė jau pasirinkta.',
+    'uploaded'             => 'The :attribute uploading failed.',
     'url'                  => 'Negaliojantis lauko :attribute formatas.',
 
     /*

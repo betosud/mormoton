@@ -53,6 +53,7 @@ return [
         'array'   => 'Το πεδίο :attribute δεν μπορεί να έχει περισσότερα από :max αντικείμενα.',
     ],
     'mimes'                => 'Το πεδίο :attribute πρέπει να είναι αρχείο τύπου: :values.',
+    'mimetypes'            => 'Το πεδίο :attribute πρέπει να είναι αρχείο τύπου: :values.',
     'min'                  => [
         'numeric' => 'Το πεδίο :attribute πρέπει να είναι τουλάχιστον :min.',
         'file'    => 'Το πεδίο :attribute πρέπει να είναι τουλάχιστον :min kilobytes.',
@@ -80,6 +81,7 @@ return [
     'string'               => 'Το πεδίο :attribute πρέπει να είναι αλφαριθμητικό.',
     'timezone'             => 'Το πεδίο :attribute πρέπει να είναι μία έγκυρη ζώνη ώρας.',
     'unique'               => 'Το πεδίο :attribute έχει ήδη εκχωρηθεί.',
+    'uploaded'             => 'The :attribute uploading failed.',
     'url'                  => 'Το πεδίο :attribute δεν είναι έγκυρη διεύθυνση URL.',
 
     /*

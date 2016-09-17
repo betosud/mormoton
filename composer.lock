@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1503c7384dee7ae88e9781b692e1f334",
-    "content-hash": "1adca7c7a7b0215f913d4bd20d89bf53",
+    "hash": "ff1f7f07b750064a6d3a19706e2b2b5a",
+    "content-hash": "85a7fb17a30d57738d5eab6290bc3579",
     "packages": [
         {
             "name": "bican/roles",
@@ -54,16 +54,16 @@
         },
         {
             "name": "caouecs/laravel-lang",
-            "version": "3.0.11",
+            "version": "3.0.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/caouecs/Laravel-lang.git",
-                "reference": "812bedaea2c2fcf8bc2219cb0729116cf96380ef"
+                "reference": "f888bf98fefd4fb3b141cc249be43d4d98e5b1c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caouecs/Laravel-lang/zipball/812bedaea2c2fcf8bc2219cb0729116cf96380ef",
-                "reference": "812bedaea2c2fcf8bc2219cb0729116cf96380ef",
+                "url": "https://api.github.com/repos/caouecs/Laravel-lang/zipball/f888bf98fefd4fb3b141cc249be43d4d98e5b1c4",
+                "reference": "f888bf98fefd4fb3b141cc249be43d4d98e5b1c4",
                 "shasum": ""
             },
             "require-dev": {
@@ -90,65 +90,7 @@
                 "laravel",
                 "lpm"
             ],
-            "time": "2016-08-10 19:34:20"
-        },
-        {
-            "name": "chencha/share",
-            "version": "5.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/prodeveloper/social-share.git",
-                "reference": "c25fff7eaac8352df0195ead424de28335464303"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/prodeveloper/social-share/zipball/c25fff7eaac8352df0195ead424de28335464303",
-                "reference": "c25fff7eaac8352df0195ead424de28335464303",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "^5.0",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "guzzlehttp/guzzle": ">=5.3",
-                "mockery/mockery": "^0.9.4",
-                "orchestra/testbench": "~3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Chencha\\Share": "src/"
-                },
-                "classmap": [
-                    "tests/TestCase.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "thujohn",
-                    "email": "jonathan.thuau@gmail.com"
-                },
-                {
-                    "name": "chencha",
-                    "email": "jacob@chenchatech.com"
-                },
-                {
-                    "name": "datashaman",
-                    "email": "marlinf@datashaman.com"
-                }
-            ],
-            "description": "Share links with Laravel 5",
-            "keywords": [
-                "laravel",
-                "laravel5",
-                "share"
-            ],
-            "time": "2016-03-24 08:05:57"
+            "time": "2016-09-13 06:19:37"
         },
         {
             "name": "classpreloader/classpreloader",
@@ -451,16 +393,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.2.43",
+            "version": "v5.2.45",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "5490b8f00564bb60839002f86828e27edd1e5610"
+                "reference": "2a79f920d5584ec6df7cf996d922a742d11095d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/5490b8f00564bb60839002f86828e27edd1e5610",
-                "reference": "5490b8f00564bb60839002f86828e27edd1e5610",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/2a79f920d5584ec6df7cf996d922a742d11095d1",
+                "reference": "2a79f920d5584ec6df7cf996d922a742d11095d1",
                 "shasum": ""
             },
             "require": {
@@ -541,7 +483,7 @@
                 "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (~2.0).",
                 "symfony/css-selector": "Required to use some of the crawler integration testing tools (2.8.*|3.0.*).",
                 "symfony/dom-crawler": "Required to use most of the crawler integration testing tools (2.8.*|3.0.*).",
-                "symfony/psr-http-message-bridge": "Required to psr7 bridging features (0.2.*)."
+                "symfony/psr-http-message-bridge": "Required to use psr7 bridging features (0.2.*)."
             },
             "type": "library",
             "extra": {
@@ -577,7 +519,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-08-10 12:23:59"
+            "time": "2016-08-26 11:44:52"
         },
         {
             "name": "laravelcollective/html",
@@ -1266,7 +1208,7 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v3.1.3",
+            "version": "v3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
@@ -1927,17 +1869,78 @@
             "time": "2016-07-26 08:03:56"
         },
         {
-            "name": "vlucas/phpdotenv",
-            "version": "v2.3.0",
+            "name": "tshafer/laravel-service-provider",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "9ca5644c536654e9509b9d257f53c58630eb2a6a"
+                "url": "https://github.com/tshafer/laravel-service-provider.git",
+                "reference": "06d0fc20990684dad3464d9f850c5e7c84d208a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/9ca5644c536654e9509b9d257f53c58630eb2a6a",
-                "reference": "9ca5644c536654e9509b9d257f53c58630eb2a6a",
+                "url": "https://api.github.com/repos/tshafer/laravel-service-provider/zipball/06d0fc20990684dad3464d9f850c5e7c84d208a9",
+                "reference": "06d0fc20990684dad3464d9f850c5e7c84d208a9",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.1.*|5.2.*|5.3.*",
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Tshafer\\ServiceProvider\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "DRY Service Provider for Laravel 5 Packages",
+            "time": "2016-08-05 04:44:04"
+        },
+        {
+            "name": "tshafer/laravel-social-share",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tshafer/laravel-social-share.git",
+                "reference": "35210585f05d42e58c809b8d6298b640c344f011"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tshafer/laravel-social-share/zipball/35210585f05d42e58c809b8d6298b640c344f011",
+                "reference": "35210585f05d42e58c809b8d6298b640c344f011",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9",
+                "tshafer/laravel-service-provider": "1.0.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Tshafer\\SocialShare\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2015-12-29 04:06:53"
+        },
+        {
+            "name": "vlucas/phpdotenv",
+            "version": "v2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vlucas/phpdotenv.git",
+                "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
+                "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
                 "shasum": ""
             },
             "require": {
@@ -1949,7 +1952,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "2.4-dev"
                 }
             },
             "autoload": {
@@ -1974,7 +1977,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2016-06-14 14:14:52"
+            "time": "2016-09-01 10:05:43"
         }
     ],
     "packages-dev": [
@@ -3252,16 +3255,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.1.3",
+            "version": "v3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "1819adf2066880c7967df7180f4f662b6f0567ac"
+                "reference": "f291ed25eb1435bddbe8a96caaef16469c2a092d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/1819adf2066880c7967df7180f4f662b6f0567ac",
-                "reference": "1819adf2066880c7967df7180f4f662b6f0567ac",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/f291ed25eb1435bddbe8a96caaef16469c2a092d",
+                "reference": "f291ed25eb1435bddbe8a96caaef16469c2a092d",
                 "shasum": ""
             },
             "require": {
@@ -3297,7 +3300,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-07-17 14:02:08"
+            "time": "2016-09-02 02:12:52"
         },
         {
             "name": "webmozart/assert",

@@ -53,6 +53,7 @@ return [
         'array'   => 'يجب أن لا يحتوي الحقل :attribute على أكثر من :max عناصر/عنصر.',
     ],
     'mimes'                => 'يجب أن يكون الحقل ملفًا من نوع : :values.',
+    'mimetypes'            => 'يجب أن يكون الحقل ملفًا من نوع : :values.',
     'min'                  => [
         'numeric' => 'يجب أن تكون قيمة الحقل :attribute أكبر من :min.',
         'file'    => 'يجب أن يكون حجم الملف :attribute أكبر من :min كيلوبايت',
@@ -80,6 +81,7 @@ return [
     'string'               => 'يجب أن يكون الحقل :attribute نصآ.',
     'timezone'             => 'يجب أن يكون :attribute نطاقًا زمنيًا صحيحًا',
     'unique'               => 'قيمة الحقل :attribute مُستخدمة من قبل',
+    'uploaded'             => 'The :attribute uploading failed.',
     'url'                  => 'صيغة الرابط :attribute غير صحيحة',
 
     /*

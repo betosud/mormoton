@@ -53,6 +53,7 @@ return [
         'array'   => 'Le tableau :attribute ne peut contenir plus de :max éléments.',
     ],
     'mimes'                => 'Le champ :attribute doit être un fichier de type : :values.',
+    'mimetypes'            => 'Le champ :attribute doit être un fichier de type : :values.',
     'min'                  => [
         'numeric' => 'La valeur de :attribute doit être supérieure à :min.',
         'file'    => 'La taille du fichier de :attribute doit être supérieure à :min kilo-octets.',
@@ -80,6 +81,7 @@ return [
     'string'               => 'Le champ :attribute doit être une chaîne de caractères.',
     'timezone'             => 'Le champ :attribute doit être un fuseau horaire valide.',
     'unique'               => 'La valeur du champ :attribute est déjà utilisée.',
+    'uploaded'             => 'The :attribute uploading failed.',
     'url'                  => "Le format de l'URL de :attribute n'est pas valide.",
 
     /*

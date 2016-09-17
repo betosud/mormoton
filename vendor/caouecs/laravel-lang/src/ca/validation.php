@@ -53,6 +53,7 @@ return [
         'array'   => ':attribute no ha de tenir més de :max ítems.',
     ],
     'mimes'                => ':attribute ha de ser un arxiu amb format: :values.',
+    'mimetypes'            => ':attribute ha de ser un arxiu amb format: :values.',
     'min'                  => [
         'numeric' => "El tamany de :attribute ha de ser d'almenys :min.",
         'file'    => "El tamany de :attribute ha de ser d'almenys :min kilobytes.",
@@ -80,6 +81,7 @@ return [
     'string'               => 'El camp :attribute ha de ser una cadena de caràcters.',
     'timezone'             => 'El camp :attribute ha de ser una zona vàlida.',
     'unique'               => ':attribute ja ha estat registrat.',
+    'uploaded'             => 'The :attribute uploading failed.',
     'url'                  => 'El format :attribute és invàlid.',
 
     /*

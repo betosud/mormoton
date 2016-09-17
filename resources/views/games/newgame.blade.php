@@ -5,7 +5,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-primary">
                     <div class="panel-heading">Nueva Partida</div>
 
@@ -19,7 +19,7 @@
 
                             <div class="col-md-8">
                                 {{--<input id="book" type="text" class="form-control" name="book" value="{{ old('book') }}">--}}
-                                {!!  Form::select('idbook', $combos['books'],null,['onchange' => 'seleccionacanonico()' ,'id'=>'idbook', 'placeholder'=>'Selecciona','class'=>'form-control','value'=>old('idbook')]) !!}
+                                {!!  Form::select('idbook', $combos['books'],null,['id'=>'idbook', 'placeholder'=>'Selecciona','class'=>'form-control','value'=>old('idbook')]) !!}
                                 @if ($errors->has('idbook'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('idbook') }}</strong>
@@ -44,12 +44,17 @@
                         <div class="form-group">
                             <div class="col-md-12 text-center">
                             <button type="submit" class="btn btn-primary btn-lg">Iniciar Partida</button>
-                            <button href="{!! url('home') !!}" type="button" class="btn btn-danger btn-lg">Cancelar</button>
+                            <a href="{!! url('home') !!}" type="button" class="btn btn-danger btn-lg">Cancelar</a>
                                 </div>
                         </div>
 
                         {!! Form::close() !!}
+                        <div class="form-group">
+                            <div class="col-md-12 text-center">
+                                <button type="button" data-toggle="modal" data-target="#instrucciones" class="btn btn-success btn-lg">Instrucciones</button>
 
+                            </div>
+                        </div>
 
 
                     </div>
@@ -59,4 +64,15 @@
     </div>
 
 
+@include('layouts.instruccion')
+
+@endsection
+
+@section('scripts')
+
+    <script>
+        $(document).ready(function() {
+            $('#instrucciones').modal('show')
+        });
+    </script>
 @endsection

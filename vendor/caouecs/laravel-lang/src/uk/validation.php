@@ -53,6 +53,7 @@ return [
         'array'   => 'Поле :attribute повинне містити не більше :max елементів.',
     ],
     'mimes'                => 'Поле :attribute повинне містити файл одного з типів: :values.',
+    'mimetypes'            => 'Поле :attribute повинне містити файл одного з типів: :values.',
     'min'                  => [
         'numeric' => 'Поле :attribute повинне бути не більше :min.',
         'file'    => 'Розмір Файлу в полі :attribute має бути не меншим :min кілобайт.',
@@ -80,6 +81,7 @@ return [
     'string'               => 'Поле :attribute повинне містити текст.',
     'timezone'             => 'Поле :attribute повинне містити коректну часову зону.',
     'unique'               => 'Таке значення поля :attribute вже існує.',
+    'uploaded'             => 'The :attribute uploading failed.',
     'url'                  => 'Формат поля :attribute неправильний.',
 
     /*

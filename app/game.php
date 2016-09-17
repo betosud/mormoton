@@ -32,6 +32,13 @@ class game extends Model
 
         return $type->numquestions * $type->duration;
     }
+    public function getNiveldscAttribute()
+    {
+
+        $type = level::findorfail($this->typelevel);
+
+        return $type->nombre;
+    }
 
     public function getNamegamerAttribute()
     {
@@ -43,15 +50,35 @@ class game extends Model
 
     public function getMedallaAttribute()
     {
-        if ($this->score > 0 && $this->socre <= 3.33) {
+        if ($this->score >= 0 && $this->score <= 3.33) {
             $medalla="medalla3.png";
         }
-        elseif ($this->score > 3.33 && $this->socre <= 6.66){
+        elseif ($this->score > 3.33 && $this->score <= 6.66){
             $medalla="medalla2.png";
         }
-        elseif ($this->score > 6.66 && $this->socre <= 10){
+        elseif ($this->score > 6.66 && $this->score <= 10){
             $medalla="medalla1.png";
         }
         return $medalla;
+    }
+    public function getMedalladscAttribute()
+    {
+        if ($this->score >= 0 && $this->score <= 3.33) {
+            $medalla="Bronce";
+        }
+        elseif ($this->score > 3.33 && $this->score <= 6.66){
+            $medalla="Plata";
+        }
+        elseif ($this->score > 6.66 && $this->score <= 10){
+            $medalla="Oro";
+        }
+        return $medalla;
+    }
+
+    public function getCalificacionAttribute()
+    {
+        $type = level::findorfail($this->typelevel);
+        $calif=($this->score*10) / $type->numquestions;
+        return $calif;
     }
 }
