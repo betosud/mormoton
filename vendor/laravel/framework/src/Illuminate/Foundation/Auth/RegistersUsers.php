@@ -3,7 +3,9 @@
 namespace Illuminate\Foundation\Auth;
 
 use Illuminate\Http\Request;
+use Illuminate\Mail\Message;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Password;
 
 trait RegistersUsers
 {
@@ -60,7 +62,31 @@ trait RegistersUsers
             );
         }
 
-        Auth::guard($this->getGuard())->login($this->create($request->all()));
+//        Auth::guard($this->getGuard())->login($this->create($request->all()));
+        $resp=$this->create($request->all());
+
+
+        if($resp) {
+            $response = Password::sendResetLink($request->only('email'), function (Message $message) {
+                $message->subject("Bienvenido a Mormoton");
+            });
+
+
+
+            switch ($response) {
+                case  Password::RESET_LINK_SENT: {
+                    \Session::flash('message','Se te a enviado un correo para establecer tu contraseña y poder ingresar');
+                    return redirect('/');
+                }
+                case Password::INVALID_USER: {
+//                    \Session::flash('message','Se te a enviado un correo para establecer tu contraseña y poder ingresar');
+                    return redirect('/');
+                }
+            }
+        }
+
+
+
 
         return redirect($this->redirectPath());
     }
