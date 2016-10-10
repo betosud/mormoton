@@ -2,10 +2,6 @@
 
 
  * ar:
-    * validation : dimensions
-    * validation : file
-    * validation : present
-    * validation : uploaded
 
  * be:
     * validation : dimensions
@@ -23,6 +19,8 @@
     * validation : present
     * validation : required_unless
     * validation : uploaded
+
+ * bn:
 
  * bs:
     * auth : failed
@@ -46,7 +44,6 @@
     * validation : uploaded
 
  * cs:
-    * validation : uploaded
 
  * cy:
     * auth : failed
@@ -80,7 +77,6 @@
  * es:
 
  * fa:
-    * validation : uploaded
 
  * fi:
     * auth : failed
@@ -105,7 +101,6 @@
     * validation : uploaded
 
  * fr:
-    * validation : uploaded
 
  * gl:
     * validation : dimensions
@@ -154,8 +149,6 @@
     * validation : uploaded
 
  * it:
-    * validation : file
-    * validation : uploaded
 
  * ja:
     * validation : dimensions
@@ -166,8 +159,6 @@
     * validation : uploaded
 
  * ka:
-    * validation : file
-    * validation : uploaded
 
  * km:
     * auth : failed
@@ -222,8 +213,6 @@
     * validation : uploaded
 
  * ms:
-    * validation : file
-    * validation : uploaded
 
  * nb:
     * validation : dimensions

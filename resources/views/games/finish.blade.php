@@ -1,9 +1,28 @@
 @extends('layouts.app')
 
+
+@section('head')
+
+    <meta property="og:url" content="{!! $urlmormoton !!}" />
+
+    <meta property="og:title" content="Juega Mormoton" />
+
+    <meta property="og:description" content="Calificacion: {!! $game->calificacion !!}  Aciertos: {!! $game->score !!} Nivel:{!! $game->niveldsc !!}" />
+
+    <meta property="og:image" content="{!! asset('imagenes/'.$game->medalla) !!}" />
+
+@endsection
+
+
+
 @section('content')
+
 
     <div class="container">
         <div class="row">
+
+
+
             <div class="col-md-10 col-md-offset-1">
                 <div class="panel panel-primary">
                     <div class="panel-heading">Felicidades</div>
@@ -19,17 +38,24 @@
 </p>
 
 
-                                <p>
+
                                     {{--<a class="center-block btn btn-primary btn-lg col-md-6" href="{!! url('facebook') !!}" role="button">Compartir en Facebook</a>--}}
                             <div class="social-buttons">
-                                <a class="center-block btn btn-primary btn-lg col-md-6" role="button" href="{!! url('facebook') !!}"
-                                   target="_blank">Compartir en Facebook
+                                {{--<a class="center-block btn btn-primary btn-lg col-md-6" role="button" href="{!! url('facebook') !!}"--}}
+                                   {{--target="_blank">Compartir en Facebook--}}
 
-                                </a>
-                            </div>
+                                {{--</a>--}}
+                                <p>
 
+                            @if (Auth::guest())
+                                <a class="center-block btn btn-success btn-lg col-md-12" href="{{ url('/register') }}" role="button">Registrate</a>
+                                @else
+                                <a class="center-block btn btn-primary btn-lg col-md-6" role="button" href="javascript: void(0);"onclick="window.open('http://www.facebook.com/sharer.php?u={!! $urlmormoton !!}','popup', 'toolbar=0, status=0, width=650, height=450');">
+                                    Compartir Facebook</a>
                                     <a class="center-block btn btn-success btn-lg col-md-6" href="{!! route('newgame') !!}" role="button">Nueva Partida</a>
+                                @endif
                                 </p>
+                        </div>
                         </div>
                 </div>
             </div>

@@ -21,7 +21,11 @@
                         @else
                         <div class="jumbotron">
                             <h1 class="text-center">Bienvenido a Mormoton</h1>
-                            <img src="{!! asset('imagenes/bienvenida.png') !!}" WIDTH=250 HEIGHT=250 class="img-rounded center-block">
+                            <h3 class="text-center lead">
+                                Mormoton, pone a prueba tus conocimientos que has adquirido a los largo de tu vida, de una forma divertida y entretenida
+                            </h3>
+                            <H2 class="text-center">¡Demuestra Cuanto Sabes de las Escrituras!</H2>
+                            <img src="{!! asset('imagenes/bienvenida.png') !!}" WIDTH=300 HEIGHT=300 class="img-rounded center-block">
                             @if(Auth::guest())
                             <p><a class="btn btn-primary btn-lg center-block" href="{{ url('/register') }}" role="button">Registrate</a></p>
                                 @endif

@@ -64,7 +64,7 @@
                                                     </div>
                                                     <?php $answertotal++?>
                                                 @endforeach
-
+                                                <br>
                                                 <div class="center-block text-center">
                                                     <button type="button" class=" btn btn-primary btn-lg" href="#pregunta{!! $totalquestions-1 !!}" aria-controls="pregunta{!! $totalquestions-1 !!}" role="tab" data-toggle="tab">Anterior</button>
                                                     @if($totalquestions+1 < count($questions))

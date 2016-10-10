@@ -36,11 +36,6 @@ class ComposerStaticInit96e4d63811d5fe885df1d82d935961cb
         array (
             'Webmozart\\Assert\\' => 17,
         ),
-        'T' => 
-        array (
-            'Tshafer\\SocialShare\\' => 20,
-            'Tshafer\\ServiceProvider\\' => 24,
-        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Util\\' => 22,
@@ -64,6 +59,7 @@ class ComposerStaticInit96e4d63811d5fe885df1d82d935961cb
         'P' => 
         array (
             'Psy\\' => 4,
+            'Psr\\Log\\' => 8,
             'PhpParser\\' => 10,
         ),
         'M' => 
@@ -113,14 +109,6 @@ class ComposerStaticInit96e4d63811d5fe885df1d82d935961cb
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
-        ),
-        'Tshafer\\SocialShare\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/tshafer/laravel-social-share/src',
-        ),
-        'Tshafer\\ServiceProvider\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/tshafer/laravel-service-provider/src',
         ),
         'Symfony\\Polyfill\\Util\\' => 
         array (
@@ -194,6 +182,10 @@ class ComposerStaticInit96e4d63811d5fe885df1d82d935961cb
         array (
             0 => __DIR__ . '/..' . '/psy/psysh/src/Psy',
         ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
@@ -239,10 +231,6 @@ class ComposerStaticInit96e4d63811d5fe885df1d82d935961cb
     public static $prefixesPsr0 = array (
         'P' => 
         array (
-            'Psr\\Log\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/psr/log',
-            ),
             'Prophecy\\' => 
             array (
                 0 => __DIR__ . '/..' . '/phpspec/prophecy/src',
@@ -2940,26 +2928,6 @@ class ComposerStaticInit96e4d63811d5fe885df1d82d935961cb
         'Symfony\\Polyfill\\Util\\TestListener' => __DIR__ . '/..' . '/symfony/polyfill-util/TestListener.php',
         'TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
-        'Tshafer\\ServiceProvider\\ServiceProvider' => __DIR__ . '/..' . '/tshafer/laravel-service-provider/src/ServiceProvider.php',
-        'Tshafer\\SocialShare\\Facades\\SocialShare' => __DIR__ . '/..' . '/tshafer/laravel-social-share/src/Facades/SocialShare.php',
-        'Tshafer\\SocialShare\\ServiceProvider' => __DIR__ . '/..' . '/tshafer/laravel-social-share/src/ServiceProvider.php',
-        'Tshafer\\SocialShare\\Services\\Delicious' => __DIR__ . '/..' . '/tshafer/laravel-social-share/src/Services/Delicious.php',
-        'Tshafer\\SocialShare\\Services\\Digg' => __DIR__ . '/..' . '/tshafer/laravel-social-share/src/Services/Digg.php',
-        'Tshafer\\SocialShare\\Services\\Evernote' => __DIR__ . '/..' . '/tshafer/laravel-social-share/src/Services/Evernote.php',
-        'Tshafer\\SocialShare\\Services\\Facebook' => __DIR__ . '/..' . '/tshafer/laravel-social-share/src/Services/Facebook.php',
-        'Tshafer\\SocialShare\\Services\\Gmail' => __DIR__ . '/..' . '/tshafer/laravel-social-share/src/Services/Gmail.php',
-        'Tshafer\\SocialShare\\Services\\GooglePlus' => __DIR__ . '/..' . '/tshafer/laravel-social-share/src/Services/GooglePlus.php',
-        'Tshafer\\SocialShare\\Services\\LinkedIn' => __DIR__ . '/..' . '/tshafer/laravel-social-share/src/Services/LinkedIn.php',
-        'Tshafer\\SocialShare\\Services\\Pinterest' => __DIR__ . '/..' . '/tshafer/laravel-social-share/src/Services/Pinterest.php',
-        'Tshafer\\SocialShare\\Services\\Reddit' => __DIR__ . '/..' . '/tshafer/laravel-social-share/src/Services/Reddit.php',
-        'Tshafer\\SocialShare\\Services\\ScoopIt' => __DIR__ . '/..' . '/tshafer/laravel-social-share/src/Services/ScoopIt.php',
-        'Tshafer\\SocialShare\\Services\\Service' => __DIR__ . '/..' . '/tshafer/laravel-social-share/src/Services/Service.php',
-        'Tshafer\\SocialShare\\Services\\Springpad' => __DIR__ . '/..' . '/tshafer/laravel-social-share/src/Services/Springpad.php',
-        'Tshafer\\SocialShare\\Services\\Tumblr' => __DIR__ . '/..' . '/tshafer/laravel-social-share/src/Services/Tumblr.php',
-        'Tshafer\\SocialShare\\Services\\Twitter' => __DIR__ . '/..' . '/tshafer/laravel-social-share/src/Services/Twitter.php',
-        'Tshafer\\SocialShare\\Services\\Viadeo' => __DIR__ . '/..' . '/tshafer/laravel-social-share/src/Services/Viadeo.php',
-        'Tshafer\\SocialShare\\Services\\VkCom' => __DIR__ . '/..' . '/tshafer/laravel-social-share/src/Services/VkCom.php',
-        'Tshafer\\SocialShare\\Share' => __DIR__ . '/..' . '/tshafer/laravel-social-share/src/Share.php',
         'Typelevel' => __DIR__ . '/../..' . '/database/migrations/2016_09_05_012713_typelevel.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
         'XdgBaseDir\\Xdg' => __DIR__ . '/..' . '/dnoegel/php-xdg-base-dir/src/Xdg.php',

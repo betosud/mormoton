@@ -13,14 +13,15 @@ use mormoton\Http\Requests;
 use mormoton\level;
 use mormoton\question;
 use mormoton\questionsgame;
-use Tshafer\SocialShare\Share;
+
+
 
 
 class GameController extends Controller
 {
     public function newgame(Request $request)
     {
-        $combos['books']= books::lists('name','id');
+        $combos['books']= books::where('id',1)->lists('name','id');
         
         
         $combos['level']= level::lists('descripcion','id');
@@ -123,9 +124,13 @@ return $questionsgame;
             $game=game::findorfail($id);
         $urlmormoton=url('score',[$id,$token]);
 
+//        $shared=Share::facebook($urlmormoton, $game->medalladsc,asset('imagenes/'.$game->medalla));
+//        $shared= Share::with('facebook', $urlmormoton, $game->medalladsc, asset('imagenes/'.$game->medalla));
+
+//        dd($shared);
             if($game->token==$token) {
 
-                return view('games.finish', compact('game'));
+                return view('games.finish', compact('game','urlmormoton'));
             }
             else {
                 abort(403);
@@ -169,4 +174,9 @@ return $questionsgame;
 
 
     }
+    public function games(Request $request){
+        $games=game::where('iduser',$request->user()->id)->orderby('id','desc')->paginate(15);
+        return view('games.games',compact('games'));
+    }
+
 }

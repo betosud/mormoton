@@ -9,7 +9,7 @@
 
                 <div class="list-group">
                     <a href="#" class="list-group-item list-group-item-danger">
-                        <h4 class="list-group-item-heading">Seleecion de Libro</h4>
+                        <h4 class="list-group-item-heading">Seleccion de Libro</h4>
                         <p class="list-group-item-text">Selecciona un de los libros Canonicos, tus preguntas seran de acuerdo al libro que selecciones</p>
                     </a>
                 </div>

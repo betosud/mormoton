@@ -44,6 +44,7 @@
                         <div class="form-group">
                             <div class="col-md-12 text-center">
                             <button type="submit" class="btn btn-primary btn-lg">Iniciar Partida</button>
+
                             <a href="{!! url('home') !!}" type="button" class="btn btn-danger btn-lg">Cancelar</a>
                                 </div>
                         </div>
@@ -52,7 +53,6 @@
                         <div class="form-group">
                             <div class="col-md-12 text-center">
                                 <button type="button" data-toggle="modal" data-target="#instrucciones" class="btn btn-success btn-lg">Instrucciones</button>
-
                             </div>
                         </div>
 

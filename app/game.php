@@ -2,6 +2,7 @@
 
 namespace mormoton;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use SoftDeletes;
 
@@ -10,7 +11,7 @@ class game extends Model
     protected $table = 'games';
     protected $dates = ['deleted_at'];
 
-    protected $fillable = ['id', 'iduser', 'typelevel', 'timestart', 'endtime', 'score', 'token'];
+    protected $fillable = ['id','idbook', 'iduser', 'typelevel', 'timestart', 'endtime', 'score', 'token','timestart','endtime'];
 
 
     public function getTypeleveldscAttribute()
@@ -19,11 +20,28 @@ class game extends Model
         return $type->nombre;
     }
 
+
+    public function getBookNameAttribute()
+    {
+        $book = books::findorfail($this->idbook);
+        return $book->name;
+    }
+    public function getFechaGameAttribute()
+    {
+        $explode=explode(' ',$this->timestart);
+        $fecha=explode('-',$explode[0]);
+
+        $fecha=Carbon::createFromDate($fecha[0],$fecha[1],$fecha[2]);
+
+        return $fecha->format('Y-M-d');
+    }
     public function getNumquestionsAttribute()
     {
         $type = level::findorfail($this->typelevel);
         return $type->numquestions;
     }
+
+
 
     public function getTotalminutosAttribute()
     {
@@ -50,35 +68,48 @@ class game extends Model
 
     public function getMedallaAttribute()
     {
-        if ($this->score >= 0 && $this->score <= 3.33) {
+        $type = level::findorfail($this->typelevel);
+        $calif=($this->score*10) / $type->numquestions;
+        $calif=round($calif,2);
+        if ($calif >= 0 && $calif <= 6) {
             $medalla="medalla3.png";
         }
-        elseif ($this->score > 3.33 && $this->score <= 6.66){
+        elseif ($calif > 6 && $calif < 9){
             $medalla="medalla2.png";
         }
-        elseif ($this->score > 6.66 && $this->score <= 10){
+        elseif ($calif >= 9 && $calif <= 10){
             $medalla="medalla1.png";
         }
         return $medalla;
     }
     public function getMedalladscAttribute()
     {
-        if ($this->score >= 0 && $this->score <= 3.33) {
+        $type = level::findorfail($this->typelevel);
+        $calif=($this->score*10) / $type->numquestions;
+        $calif=round($calif,2);
+        if ($calif >= 0 && $calif <= 6) {
             $medalla="Bronce";
         }
-        elseif ($this->score > 3.33 && $this->score <= 6.66){
+        elseif ($calif > 6 && $calif < 9){
             $medalla="Plata";
         }
-        elseif ($this->score > 6.66 && $this->score <= 10){
+        elseif ($calif >= 9 && $calif <= 10){
             $medalla="Oro";
         }
         return $medalla;
+
     }
 
+    public function getPreguntasAttribute()
+    {
+        $type = level::findorfail($this->typelevel);
+        return $type->numquestions;
+    }
     public function getCalificacionAttribute()
     {
         $type = level::findorfail($this->typelevel);
         $calif=($this->score*10) / $type->numquestions;
+        $calif=round($calif,2);
         return $calif;
     }
 }
