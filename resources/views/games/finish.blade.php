@@ -7,7 +7,7 @@
 
     <meta property="og:title" content="Juega Mormoton" />
 
-    <meta property="og:description" content="Calificacion: {!! $game->calificacion !!}  Aciertos: {!! $game->score !!} Nivel:{!! $game->niveldsc !!}" />
+    <meta property="og:description" content="Calificacion: {!! $game->calificacion !!}  Aciertos: {!! $game->score !!} Nivel:{!! $game->niveldsc !!} Libro:{!! $game->bookname !!} " />
 
     <meta property="og:image" content="{!! asset('imagenes/'.$game->medalla) !!}" />
 

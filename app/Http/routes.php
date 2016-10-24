@@ -23,6 +23,8 @@ Route::auth();
 Route::get('questions',['uses'=>'QuestionsController@Index','as'=>'questions','middleware'=>'auth','middleware' => 'permission:view.question']);
 Route::post('storequestions',['uses'=>'QuestionsController@store','as'=>'storequestions','middleware'=>'auth','middleware' => 'permission:add.question']);
 Route::get('listarquestion',['uses'=>'QuestionsController@listar','as'=>'listarquestion','middleware'=>'auth','middleware' => 'permission:view.question']);
+Route::get('editar/{id}',['uses'=>'QuestionsController@editar','as'=>'editar','middleware'=>'auth','middleware' => 'permission:edit.question']);
+Route::put('actualizaquestion/{id}',['uses'=>'QuestionsController@actualiza','as'=>'actualizaquestion','middleware'=>'auth','middleware' => 'permission:edit.question']);
 
 
 //combos
@@ -40,6 +42,9 @@ Route::post('savegame',['uses'=>'GameController@savegame','as'=>'savegame','midd
 Route::get('score/{id}/{token}',['uses'=>'GameController@score','as'=>'score']);
 Route::get('games',['uses'=>'GameController@games','as'=>'games']);
 
+
+//resultados
+Route::get('estudia/{id}',['uses'=>'GameController@study','as'=>'estudia','middleware'=>'auth','middleware']);
 
 //share
 

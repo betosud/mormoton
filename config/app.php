@@ -160,7 +160,9 @@ return [
 
         Bican\Roles\RolesServiceProvider::class,
 
-        Collective\Html\HtmlServiceProvider::class
+        Collective\Html\HtmlServiceProvider::class,
+
+        
 
     ],
 
@@ -210,7 +212,8 @@ return [
 
 
         'Form' => Collective\Html\FormFacade::class,
-      'Html' => Collective\Html\HtmlFacade::class
+      'Html' => Collective\Html\HtmlFacade::class,
+
 
     ],
 

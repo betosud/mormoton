@@ -91,7 +91,7 @@ function seleccionalibro() {
 }
 function seleccionacanonico() {
     var canonico=$('#idbook').val();
-    var url='combos/libros/'+canonico;
+    var url='../combos/libros/'+canonico;
     $.get(url,function(result){
         $('#libro').empty();
         $('#libro').append('<option value="">Selecciona</option>');

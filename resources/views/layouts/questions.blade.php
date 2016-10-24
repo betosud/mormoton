@@ -7,6 +7,7 @@
             <th>Pregunta</th>
             <th>Respuesta</th>
             <th>Capturado por</th>
+            <th>Editar</th>
         </tr>
         </thead>
         <tbody>
@@ -17,6 +18,7 @@
             <td>{!! $question->question !!}</td>
             <td>{!! $question->respuestacorrecta !!}</td>
             <td>{!! $question->userdata->name !!}</td>
+            <td><a type="button" class="btn btn-primary" href="{!! route('editar',$question->id) !!}" >Editar</a></td>
         </tr>
         @endforeach
         </tbody>

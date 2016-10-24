@@ -45,7 +45,9 @@
                                         {!! $game->score !!}
                                     </th>
                                     <th>
-                                        <a class="center-block btn btn-info btn-sm" target="_blank" href="{!! route('score',[$game->id,$game->token]) !!}" role="button">Compartir</a>
+                                        <a class="btn btn-info btn-group-sm" target="_blank" href="{!! route('score',[$game->id,$game->token]) !!}" role="button">Compartir</a>
+
+                                        <a class="btn btn-success btn-group-sm" href="{!! route('estudia',[$game->id]) !!}" role="button">Referencias</a>
                                     </th>
                                 </tr>
                             @endforeach

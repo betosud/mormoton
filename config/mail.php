@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.estacaamecameca.org'),
+    'host' => env('MAIL_HOST', 'mx1.hostinger.mx'),
 
     /*
     |--------------------------------------------------------------------------
@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'mormoton@estacaamecameca.org', 'name' => 'Soporte Mormoton'],
+    'from' => ['address' => 'soporte@estacaamecameca.org', 'name' => 'Soporte Mormoton'],
 
     /*
     |--------------------------------------------------------------------------
@@ -108,5 +108,7 @@ return [
     */
 
     'sendmail' => '/usr/sbin/sendmail -bs',
+
+//    'pretend' => false,
 
 ];

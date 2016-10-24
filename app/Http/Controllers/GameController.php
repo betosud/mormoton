@@ -11,6 +11,7 @@ use mormoton\books;
 use mormoton\game;
 use mormoton\Http\Requests;
 use mormoton\level;
+use mormoton\libros;
 use mormoton\question;
 use mormoton\questionsgame;
 
@@ -177,6 +178,39 @@ return $questionsgame;
     public function games(Request $request){
         $games=game::where('iduser',$request->user()->id)->orderby('id','desc')->paginate(15);
         return view('games.games',compact('games'));
+    }
+
+
+    public function study(Request $request,$id){
+        //obtener juego
+        $game=game::findorfail($id);
+
+$retroalimentacion=array();
+        if($game->iduser === $request->user()->id){
+            $preguntasjuego=questionsgame::where('idgame',$game->id)->get();
+
+            foreach ($preguntasjuego as $pregunta){
+                $question=question::findorfail($pregunta->idquestion);
+                $answer=answers::where('idquestion',$pregunta->idquestion)->where('correcta',1)->get();
+                $canonico=books::findorfail($answer[0]->canonico);
+                $libro=libros::findorfail($answer[0]->libro);
+                $capitulo=$answer[0]->capitulo;
+                $versiculos=$answer[0]->versiculos;
+                
+                $reflink="https://www.lds.org/scriptures/";
+                $reflink.=$canonico->url."/".$libro->url."/".$capitulo.".".$versiculos;
+                $reflink.="?lang=spa#10";
+                $retroalimentacion[$question->id]=array('questions'=>$question->question,'answer'=>$answer[0]->answer,'ref'=>$reflink);
+
+
+            }
+            dd($retroalimentacion);
+        }
+        else{
+            abort(403);
+        }
+        //obtener referencias del juego
+
     }
 
 }

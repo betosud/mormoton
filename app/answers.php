@@ -12,5 +12,5 @@ class answers extends Model
     protected $table = 'answers';
 
 
-    protected $fillable = ['id','idquestion','answer','correcta','canonico','libro','versiculos'];
+    protected $fillable = ['id','idquestion','answer','correcta','canonico','libro','versiculos','capitulo'];
 }

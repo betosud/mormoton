@@ -61,7 +61,7 @@
                     <!-- Authentication Links -->
                     @if (Auth::guest())
                         <li><a href="{{ url('/login') }}">Ingresar</a></li>
-                        <li><a href="{{ url('/register') }}">Registrarse</a></li>
+                        {{--<li><a href="{{ url('/register') }}">Registrarse</a></li>--}}
                     @else
 
                         @role('assistant|admin')
